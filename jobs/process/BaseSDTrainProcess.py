@@ -1387,6 +1387,8 @@ class BaseSDTrainProcess(BaseTrainProcess):
                     transformer_only=self.network_config.transformer_only,
                     **network_kwargs
                 )
+                print(f"Network: {self.network}")
+                print(self.network.get_all_modules())
 
 
                 # todo switch everything to proper mixed precision like this
